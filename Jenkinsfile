@@ -30,7 +30,7 @@ pipeline {
 
                         // Clean install dependencies and check for errors
                         echo "Running npm ci..."
-                        sh 'npm ci --verbose'
+                        sh 'sudo npm ci --verbose'
 
                         // Show directory contents after npm install
                         sh 'echo "Directory Listing After npm ci:"'
